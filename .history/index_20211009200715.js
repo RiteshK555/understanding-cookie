@@ -1,6 +1,6 @@
 const express=require("express")
 const app=express();
-const cookieParser=require("cookie-parser");
+const cookieParser=requrie("cookie-parser");
 app.use(cookieParser());
 app.get("/",(req,res)=>{
     return res.json({message:"hello messsage"});
