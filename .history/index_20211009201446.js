@@ -7,6 +7,6 @@ app.get("/",(req,res)=>{
 })
 app.get("/setcookie",(req,res)=>{
     res.cookie("cookie name","cookie value");
-    res.send("cookie set")
+    res.send()
 })
 app.listen(3000);
