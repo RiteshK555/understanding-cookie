@@ -17,8 +17,4 @@ app.get("/setcookie",(req,res)=>{
 app.get("/getcookies",(req,res)=>{
     res.send(req.cookies);
 })
-app.get("/deletecookie",(req,res)=>{
-    res.clearCookie();
-    res.send("cleared cookie");
-})
 app.listen(3000);

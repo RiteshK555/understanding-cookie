@@ -7,18 +7,11 @@ app.get("/",(req,res)=>{
 })
 app.get("/setcookie",(req,res)=>{
     res.cookie("cookie name","cookie value",{
-        maxAge:5000,
-        secure:false,
-        httpOnly:true,
-        sameSite:'lax'
+        maxAge:
     });
     res.send("cookie set");
 })
 app.get("/getcookies",(req,res)=>{
     res.send(req.cookies);
-})
-app.get("/deletecookie",(req,res)=>{
-    res.clearCookie();
-    res.send("cleared cookie");
 })
 app.listen(3000);
