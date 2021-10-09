@@ -1,4 +1,4 @@
-const express=require("express")
+const express=requie("express")
 const app=express();
 const cookieParser=requrie("cookie-parser");
 app.use(cookieParser());
